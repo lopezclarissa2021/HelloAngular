@@ -16,7 +16,7 @@ export class HomeComponent {
     {
       title: "Card Two",
       text: "This is a body of a card and I am making this up.",
-      imgSrc: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLwWqArGADUxDq6QprtIzsF82dMF.jpg"
+      imgSrc: "https://fakeimg.pl/600x400"
     },
     {
       title: "Card Three",

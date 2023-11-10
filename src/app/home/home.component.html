@@ -1,14 +1,17 @@
 <!-- logo -->
 <div class="row">
   <div class="col d-flex justify-content-center">
-    <img class="mt-4" src="/assests/images/SmashGamesLogo.png" alt="">
+    <img class="mt-4" src="/assets/images/SmashGamesLogo.png" alt="">
   </div>
 </div>
 
 <!-- mission statement -->
-<div class="row">
-  <div class="col">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit nulla quibusdam laudantium, rerum,
+<div class="row bg-primary text-dark border-top border-bottom border-5 border-black p-5">
+  <div class="col d-flex justify-content-center">
+    <p class="fs-4 text-center w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit nulla
+      quibusdam
+      laudantium,
+      rerum,
       provident quos labore incidunt quas nisi fugit? Nihil facilis, quibusdam eveniet expedita corporis aliquid dolorum
       totam. </p>
   </div>
@@ -16,5 +19,5 @@
 
 <app-card-list [cardList]="games"></app-card-list>
 
-<!-- <pre>{{ games | async | json }}</pre> -->
+<pre>{{ games | async | json }}</pre>
 <!-- deck of cards of games -->
