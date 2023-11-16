@@ -30,13 +30,5 @@ export class GameDetailComponent implements OnInit {
       this.game = ourGame;
     })
 
-    // this.route.paramMap.subscribe(params => {
-    //   console.log(params);
-    //   this.id = params.get('id')!;
-    // });
-
-    // this.data.getOneGame(this.id).subscribe(result => {
-    //   console.log(result);
-    // });
   }
 }
