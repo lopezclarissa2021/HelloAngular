@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../data.service';
 import { switchMap } from 'rxjs';
 
@@ -14,7 +14,7 @@ export class GameDetailComponent implements OnInit {
 
   game: any = {};
 
-  constructor(private route: ActivatedRoute, private data: DataService) {
+  constructor(private route: ActivatedRoute, private data: DataService, private router: Router) {
 
   }
 
@@ -29,6 +29,20 @@ export class GameDetailComponent implements OnInit {
     ).subscribe(ourGame => {
       this.game = ourGame;
     })
+  }
+
+  editGame(): void {
+    //when clicked open the edit page
+    this.router.navigate(['games', this.id, 'edit']);
+  }
+
+  deleteGame(): void {
+    // delete game
+    this.data.deleteGame(this.id).subscribe(result => {
+      this.router.navigate(['']);
+    })
+
+    // if successful redirect
 
   }
 }
